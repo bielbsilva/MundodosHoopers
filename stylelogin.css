@@ -28,13 +28,13 @@ body{
     font-weight: bold;
 }
 
-.fundo img{
+.card img{
     width: 27%;
     margin-left: 6rem;
     margin-top: 5.5rem;
 }
 
-.fundo h2{
+.card h2{
     font-family: "Poppins", sans-serif;;
     display: flex;
     justify-content: right;
@@ -44,7 +44,7 @@ body{
     text-align: center;
 }
 
-.fundo #email_input{
+.card .email{
     display: flex;
     justify-content: right;
 }
