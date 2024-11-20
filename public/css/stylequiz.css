@@ -27,6 +27,8 @@ body{
     font-weight: bold;
 }
 
+/* Título do quizS */
+
 .titulo{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -36,24 +38,29 @@ body{
     color: #F8E300;
 }
 
+/* Card contendo as instruções do jogo */
+
 .card {
     background-color: #ffffff;
     font-family: "Poppins", sans-serif ;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     width: 30%;
-    height: 30vb;
-    margin-left: 41rem;
+    height: 55vb;
+    margin-left: 29rem;
     font-size: 20px;
     text-align: center;
+    border-radius: 10px;
 }
+
+/* Botão de começar */
 
 .card #botao{
     background-color: #1D428A;
     color: #ffffff;
     display: flex;
-    justify-content: center ;
-    margin-left: 13rem;
+    justify-self: center ;
     width: 30%;
     font-weight: bold;
     cursor: pointer;
