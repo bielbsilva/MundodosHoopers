@@ -10,57 +10,89 @@
 
 <body>
 
-   <div class="container">
-        <div class="content primeiro-content">
-            <div class="primeira-column">
-                <h2 class="titulo">Seja Bem-vindo Hooper!</h2>
-                <p class="descricao">Continue conectado conosco</p>
-                <p class="descricao">Por favor entrar com seu perfil pessoal</p>
-                <button class="btn">Cadastrar-se</button>
-            </div>
-            <div class="segunda-column"></div>
-            <h2 class="titulo">Crie sua Conta</h2>
-            <div class="social-media">
-                <ul class="list-social-media">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Google+</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                </ul>
-            </div>
-            <p class="descricao">Ou use seu email para se registrar</p>
-            <form class="form">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button class="btn">Cadastrar-se</button>
+    <div class="back-btn">
+        <a href="index.html">
+            <button class="back-btn">❮</button>
+        </a>
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crie sua conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use o seu email para se registrar</span>
+                <div class="infield">
+                    <input type="text" placeholder="Name" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <button>Cadastrar</button>  <!--oficial-->
             </form>
         </div>
-        <div class="content segundo-content">
-            <div class="primeira-column">
-                <h2 class="titulo">Seja Bem-vindo Novamente Hooper!</h2>
-                <p class="descricao">Entre com seu perfil pessoal</p>
-                <p class="descricao">e se divirta hooper</p>
-                <button class="btn">Entrar</button>
-            </div>
-            <div class="segunda-column"></div>
-            <h2 class="titulo">Entre com sua conta</h2>
-            <div class="social-media">
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Google+</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                </ul>
-            </div>
-            <p class="descricao">Ou use seu email para se registrar</p>
-            <form class="form">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <a href="#">Esqueceu sua senha?</a>
-                <button class="btn">Entrar</button>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Faça seu login</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use uma de suas contas</span>
+                <div class="infield">
+                    <input type="email" placeholder="Email" name="email" />
+                    <label></label>
+                </div>
+                <div class="infield">
+                    <input type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <a href="#" class="forgot">Esqueceu sua senha?</a>
+                <button>Entrar</button>  <!--oficial-->
             </form>
         </div>
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Olá, novamente!</h1>
+                    <p>Para se manter conectado, faça o login com os seus dados.</p>
+                    <button>Entrar</button> <!--interação-->
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Seja bem-vindo!</h1>
+                    <p>Ainda não tem uma conta? Insira os seus dados e se conecte aqui.</p>
+                    <button>Cadastrar-se</button> <!--interação-->
+                </div>
+            </div>
+            <button id="overlayBtn"></button>
         </div>
-   </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const overlayCon = document.getElementById('overlayCon');
+        const overlayBtn = document.getElementById('overlayBtn');
+
+        overlayBtn.addEventListener('click', () => {
+            container.classList.toggle('rigth-panel-active');
+
+            overlayBtn.classList.remove('btnScaled');
+            window.requestAnimationFrame(() => {
+                overlayBtn.classList.add('btnScaled');
+            })
+        });
+    </script>
 
 
 
