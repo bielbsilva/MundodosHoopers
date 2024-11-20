@@ -17,7 +17,6 @@
             <nav class="itens">
                 <ul>
                     <a class="itens" href="index.html">HOME </a>
-                    <a class="itens" href="noticias.html">NOTÍCIAS</a>
                     <a class="itens" href="curiosidades.html">CURIOSIDADES </a>
                     <a class="itens" href="quiz.html">QUIZ </a>
                     <a class="itens" href="login.html">LOGIN</a>
@@ -27,13 +26,42 @@
 
     </header>
 
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="img/warriors campeão.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/bandeira warriors.jfif" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/finals.jpg" style="width:100%">
+        </div>
+    </div>
+
     <div class="titulo">
-        <img src="img/warriors campeão.jpg" alt="warriors_titulo">
         <h1>DUBNATION</h1>
         <p class="texto">
-            Este é um site voltado para torcedores do Golden State Warriors, com o intuito de receber notícias sobre o time diariamente, curiosidades e um quiz para testar o seu nível de conhecimento como um DUB </p>
+            Este é um site voltado para torcedores do Golden State Warriors, que assim como eu são apaixonados por esse time e por basquete em geral</p>
     </div>
+
+    
 
 </body>
 
 </html>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Muda a imagem a cada 2 segundos
+}
+</script>

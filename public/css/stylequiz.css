@@ -4,19 +4,78 @@ body{
     background: #1D428A ;
 }
 
+.cabecalho {
+    /* margin: 20%; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #1D428A;
+    margin: -0.5rem;
+}
+
+.cabecalho img {
+    margin-left: 2rem;
+    width: 20vh;
+    height: 10vb;
+}
+
+.cabecalho .itens {
+    justify-items: center;
+    font-family: "Poppins", sans-serif;
+    color: #F8E300;
+    font-size: 15px;
+    margin-right: 3rem;
+    font-weight: bold;
+}
+
 .titulo{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    color: #F8E300;
 }
 
 .card {
     background-color: #ffffff;
     font-family: "Poppins", sans-serif ;
-    display: block;
+    display: flex;
     justify-content: center;
-    width: 50%;
-    margin-left: 21rem;
+    width: 30%;
+    height: 30vb;
+    margin-left: 41rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card #botao{
+    background-color: #1D428A;
+    color: #ffffff;
+    display: flex;
+    justify-content: center ;
+    margin-left: 13rem;
+    width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.spnQtd{
+    text-align: end;
+}
+
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.terminar{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.terminar button{
+    text-align: center;
 }
