@@ -44,15 +44,15 @@ body{
     background-color: #ffffff;
     font-family: "Poppins", sans-serif ;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    width: 30%;
-    height: 55vb;
-    margin-left: 29rem;
+    justify-self: center;
+    width: 100vh;
+    height: 30vb;
     font-size: 20px;
     text-align: center;
     border-radius: 10px;
 }
+
+.card
 
 /* Botão de começar */
 
@@ -67,7 +67,12 @@ body{
     border-radius: 25px;
 }
 
-.spnQtd{
+button{
+    display: flex;
+    justify-self: center;
+}
+
+/* .spnQtd{
     text-align: end;
 }
 
@@ -81,7 +86,7 @@ body{
     display: none;
     flex-direction: column;
     gap: 10px;
-}
+} */
 
 .terminar button{
     text-align: center;
