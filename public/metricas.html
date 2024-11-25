@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warriors | dashboard</title>
+    <link rel="stylesheet" href="css/metricas.css">
+</head>
+
+<body onload="obterDadosGrafico()">
+    <div class="navbar">
+        <div class="container_navbar">
+            <div class="logo">
+                <div class="fundo_logo">
+                    <a href="index.html"> <img src="assets/LogoHeader.png" alt="" height="80px"></a>
+                </div>
+            </div>
+            <div class="menu">
+                <p id="nome_usuario"></span></p>
+                <a class="menu_item" href="index.html">HOME</a>
+                <a class="menu_item" href="#">DASHBOARD</a>
+                <a class="menu_item" href="avaliacao.html">AVALIAÇÃO</a>
+                <p class="menu_item" onclick="sair()">SAIR</p>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="dashboard_top">
+            <div class="grafico_top_left">
+                <h2>PORCENTAGEM DE AVALIAÇÕES NOTA 5</h2>
+                <canvas id="myChart1" style="position: relative; height: 400; width: 400;"></canvas>
+            </div>
+            <div class="grafico_top_right">
+                <div class="jogador_kpi">
+                    <h2>SUA PONTUAÇÃO MÁXIMA</h2>
+                    <span id="pontuacaoMax" style="font-size: x-large;"></span>
+                </div>
+                <div class="idade_kpi">
+                    <h2>IDADE MÉDIA DOS USUARIOS</h2>
+                    <span id="idade" style="font-size: x-large;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard_bottom">
+            <div class="grafico">
+                <h2>PONTUAÇÃO DOS USUARIOS</h2>
+                <canvas id="myChart2" style="position: relative; height: 10vh; width: 13vw;"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/metricas.js"></script>
+
+</html>
