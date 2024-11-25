@@ -46,13 +46,12 @@ body{
     display: flex;
     justify-self: center;
     width: 100vh;
-    height: 30vb;
+    height: 55vb;
     font-size: 20px;
     text-align: center;
     border-radius: 10px;
 }
 
-.card
 
 /* Botão de começar */
 
@@ -70,24 +69,100 @@ body{
 button{
     display: flex;
     justify-self: center;
-}
-
-/* .spnQtd{
-    text-align: end;
-}
-
-.answers{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.terminar{
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-} */
-
-.terminar button{
+    cursor: pointer;
+    border-radius: 25px;
     text-align: center;
+}
+
+.questao-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.questao {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resposta-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.resposta:disabled {
+  cursor: not-allowed;
+}
+
+.proxima-pergunta {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #224ea7 ;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  height: 48px;
+  padding: 0 28px;
+  transition: filter 0.1s;
+}
+
+.button-refazer {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: filter 0.1s;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.button-refazer:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
+}
+
+a:focus {
+  outline: none;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+.mensagem-final {
+  font-size: 20px;
+  text-align: center;
+}
+
+.mensagem-final span {
+  display: block;
+  margin-top: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.correto {
+  background-color: #049b48;
+}
+
+.incorreto {
+  background-color: #a10101;
 }

@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="css/stylecadastro.css">
 </head>
 <body>
-    <header>
+    <div class="Cadastro">
+        <div class="container">
+            <div class="card">
+                <div class="IconLogin">
+                    <img src="assets/LogoCard.png" alt="">
+                </div>
+                <div class="formulario">
+                        <input id="nome_input" placeholder="Nome">
+                        <input id="dtNasc_input" placeholder="Data de Nascimento" onfocus="this.type='date'">                  
+                        <input id="email_input" placeholder="Email">
+                        <input id="senha_input" placeholder="Senha" type="password">
+                        <input id="confirmacao_senha_input" placeholder="ConfirmarSenha" type="password">
+                    <div class="menssagemLogin">
+                        <h6>Já possui uma conta? <a href="login.html">Faça Login</a></h6>
+                    </div>
 
-        <div class="cabecalho">
-            <nav class="itens">
-                <ul>
-                    <a class="itens" href="index.html">HOME </a>
-                    <a class="itens" href="curiosidades.html">CURIOSIDADES </a>
-                    <a class="itens" href="quiz.html">QUIZ </a>
-                    <a class="itens" href="./login.html">LOGIN</a>
-                </ul>
-            </nav>
+                    <button class="botao" onclick="cadastrar()">Cadastrar</button>
+
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                  </div>
+          
+                  <div id="div_erros_login"></div>
+            </div>
         </div>
+    </div>
 
-    </header>
-
-     <div class="card">
-        <div class="conteudo">
-            <h2>Email</h2>
-            <input id="email_input" placeholder="Email">
-            <h2>Senha</h2>
-            <input id="senha_input" placeholder="Senha" type="password">
-        </div>
-    
 </body>
 </html>
+
+<script src="js/cadastro.js"></script>
