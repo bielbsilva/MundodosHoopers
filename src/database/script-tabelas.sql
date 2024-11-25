@@ -23,9 +23,10 @@ fkUsuario int,
 foreign key (fkUsuario) references usuario(id)
 );
 
+select * from usuario;
 
+SELECT id, nome, email FROM usuario WHERE email = 'gabriel@gmail.com' AND senha = 'gabriel1';
 
-
-
+select* from pontuacao;
 
 

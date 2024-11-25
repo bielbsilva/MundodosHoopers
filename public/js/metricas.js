@@ -100,9 +100,9 @@ function plotarGrafico(resposta, idAquario) {
             datasets: [{
                 label: 'Quantidade de usuários',
                 data: qtdVezes,
-                backgroundColor: '#C8102E',
-                borderColor: 'red',
-                Color: 'red',
+                backgroundColor: '#1D428A',
+                borderColor: '#1D428A',
+                Color: '#1D428A',
                 borderWidth: 1
             }],
         },
@@ -123,7 +123,7 @@ function plotarGrafico(resposta, idAquario) {
                     },
                     title: {
                         display: true,
-                        text: 'informações',
+                        text: 'Acertos',
                         color: 'rgb(9, 9, 9)',
                         font: {
                           size: 16
@@ -137,7 +137,7 @@ function plotarGrafico(resposta, idAquario) {
                     },
                     title: {
                         display: true,
-                        text: 'Porcentagem',
+                        text: 'QtdUsuarios',
                         color: 'rgb(9, 9, 9)',
                         font: {
                           size: 16
@@ -157,7 +157,7 @@ function plotarGrafico(resposta, idAquario) {
             labels: ['Nota maxima', 'Nota abaixo'],
             datasets: [{
                 data: [qtdVotos, qtdVotosAbaixo],
-                backgroundColor: ['#224ea7', '#C8102E'], 
+                backgroundColor: ['#F8E300', '#1D428A'], 
                 borderColor: ['#303030'],
                 borderWidth: 0.5
             }],
