@@ -17,32 +17,21 @@ function validarSessao() {
   }
   
   // carregamento (loading)
-  function aguardar() {
-    var divAguardar = document.getElementById("div_aguardar");
-    divAguardar.style.display = "flex";
-  }
+  // function aguardar() {
+  //   var divAguardar = document.getElementById("div_aguardar");
+  //   divAguardar.style.display = "flex";
+  // }
   
   function cadastrar() {
-    aguardar();
-    var nomeVar = nome_input.value;
-    var emailVar = email_input.value;
-    var senhaVar = senha_input.value;
-    var confirmacaoSenhaVar = confirmacao_senha_input.value;
+    var nomeVar = ipt_nome.value;
+    var emailVar = ipt_email.value;
+    var senhaVar = ipt_senha.value;
   
     if (
       nomeVar == "" ||
       emailVar == "" ||
-      senhaVar == "" ||
-      confirmacaoSenhaVar == ""
-    ) {
-      Swal.fire({
-        icon: "error",
-        title: "Erro...",
-        background: "#1D1D1D",
-        color: "#FFF",
-        text: "CAMPO EM BRANCO",
-      });
-  
+      senhaVar == ""
+    ) {  
       finalizarAguardar();
       return false;
     } else if (nomeVar.length <= 1) {
@@ -53,35 +42,10 @@ function validarSessao() {
       finalizarAguardar();
       return false;
     } else if (emailVar.indexOf('@') == -1 || emailVar.indexOf('.') == -1) {
-      Swal.fire({
-        icon: "error",
-        title: "Erro...",
-        background: "#1D1D1D",
-        color: "#FFF",
-        text: "Email inválido",
-      });
       finalizarAguardar();
       return false;
   
     } else if (senhaVar.length <= 6) {
-      Swal.fire({
-        icon: "error",
-        title: "Erro...",
-        background: "#1D1D1D",
-        color: "#FFF",
-        text: "Senha muito fraca. Necessário no mínimo 7 caracteres",
-      });
-  
-      finalizarAguardar();
-      return false;
-    } else if (confirmacaoSenhaVar != senhaVar) {
-      Swal.fire({
-        icon: "error",
-        title: "Erro...",
-        background: "#1D1D1D",
-        color: "#FFF",
-        text: "Falha ao autenticar senha",
-      });
   
       finalizarAguardar();
       return false;
@@ -102,14 +66,6 @@ function validarSessao() {
   
   
           if (resposta.ok) {
-            Swal.fire({
-              icon: "success",
-              title: "Sucesso!",
-              background: "#1D1D1D",
-              color: "#FFF",
-              text: "CADASTRO REALIZADO COM SUCESSO",
-              showConfirmButton: false,
-            });
   
             setTimeout(() => {
               window.location = "login.html";

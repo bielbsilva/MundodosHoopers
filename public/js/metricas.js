@@ -98,6 +98,7 @@ function plotarGrafico(resposta, idAquario) {
         data: {
             labels: pontos,
             datasets: [{
+                label: 'Quantidade de usuários',
                 data: qtdVezes,
                 backgroundColor: '#C8102E',
                 borderColor: 'red',
@@ -109,23 +110,40 @@ function plotarGrafico(resposta, idAquario) {
             responsive: true,
             plugins: {
                 legend: {
-                    display: false
+                    display: true
                 },
                 datalabels: {
                     color: '#fff'
                 }
             },
             scales: {
-                y: {
-                    ticks: {
-                        color: '#fff'
-                    }
-                },
                 x: {
                     ticks: {
-                        color: '#fff'
+                        color: 'rgb(9, 9, 9)',
+                    },
+                    title: {
+                        display: true,
+                        text: 'informações',
+                        color: 'rgb(9, 9, 9)',
+                        font: {
+                          size: 16
+                        }
+                    } 
+                },
+              y: {
+                beginAtZero: true,
+                ticks: {
+                        color: 'rgb(9, 9, 9)',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Porcentagem',
+                        color: 'rgb(9, 9, 9)',
+                        font: {
+                          size: 16
+                        }
                     }
-                }
+              }
             }
         }
     });

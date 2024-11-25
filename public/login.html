@@ -18,7 +18,6 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
                 <h1>Crie sua conta</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -27,22 +26,20 @@
                 </div>
                 <span>ou use o seu email para se registrar</span>
                 <div class="infield">
-                    <input type="text" placeholder="Name" />
+                    <input id="ipt_nome" type="text" placeholder="Name" />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email" />
+                    <input id="ipt_email" type="email" placeholder="Email" name="email" />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" />
+                    <input id="ipt_senha" type="password" placeholder="Password" />
                     <label></label>
                 </div>
-                <button>Cadastrar</button>  <!--oficial-->
-            </form>
+                <button onclick="cadastrar()">Cadastrar</button>  <!--oficial-->
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
                 <h1>Faça seu login</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -51,16 +48,15 @@
                 </div>
                 <span>ou use uma de suas contas</span>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email" />
+                    <input id="ipt1_email" type="email" placeholder="Email" name="email" />
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" />
+                    <input id="ipt1_senha" type="password" placeholder="Password" />
                     <label></label>
                 </div>
                 <a href="#" class="forgot">Esqueceu sua senha?</a>
-                <button>Entrar</button>  <!--oficial-->
-            </form>
+                <button onclick="entrar()">Entrar</button>  <!--oficial-->
         </div>
         <div class="overlay-container" id="overlayCon">
             <div class="overlay">
@@ -101,3 +97,4 @@
 </html>
 
 <script src="js/login.js"></script>
+<script src="js/cadastro.js"></script>

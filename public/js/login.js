@@ -17,37 +17,29 @@ function limparSessao() {
 }
 
 // carregamento (loading)
-function aguardar() {
-    var divAguardar = document.getElementById("div_aguardar");
-    divAguardar.style.display = "flex";
-}
+// function aguardar() {
+//     var divAguardar = document.getElementById("div_aguardar");
+//     divAguardar.style.display = "flex";
+// }
 
-function finalizarAguardar(texto) {
-    var divAguardar = document.getElementById("div_aguardar");
-    divAguardar.style.display = "none";
+// function finalizarAguardar(texto) {
+//     var divAguardar = document.getElementById("div_aguardar");
+//     divAguardar.style.display = "none";
 
-    var divErrosLogin = document.getElementById("div_erros_login");
-    if (texto) {
-        divErrosLogin.style.display = "flex";
-        divErrosLogin.innerHTML = texto;
-    }
-}
+//     var divErrosLogin = document.getElementById("div_erros_login");
+//     if (texto) {
+//         divErrosLogin.style.display = "flex";
+//         divErrosLogin.innerHTML = texto;
+//     }
+// }
 
 
 function entrar() {
-    aguardar();
 
-    var emailVar = email_input.value;
-    var senhaVar = senha_input.value;
+    var email = ipt1_email.value;
+    var senha = ipt1_senha.value;
 
-    if (emailVar == "" || senhaVar == "") {
-        Swal.fire({
-            icon: "error",
-            title: "Erro...",
-            background: "#1D1D1D",
-            color: "#FFF",
-            text: "CAMPO EM BRANCO",
-          });
+    if (email == "" || senha == "") {
         finalizarAguardar();
         return false;
     }
@@ -56,8 +48,8 @@ function entrar() {
     // window.location.href ="quiz.html"
     // }
 
-    console.log("FORM LOGIN: ", emailVar);
-    console.log("FORM SENHA: ", senhaVar);
+    console.log("FORM LOGIN: ", email);
+    console.log("FORM SENHA: ", senha);
 
     fetch("/usuarios/autenticar", {
         method: "POST",
@@ -65,8 +57,8 @@ function entrar() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            emailServer: emailVar,
-            senhaServer: senhaVar
+            emailServer: email,
+            senhaServer: senha
         })
     }).then(function (resposta) {
         console.log("ESTOU NO THEN DO entrar()!")
@@ -80,15 +72,7 @@ function entrar() {
                 sessionStorage.EMAIL_USUARIO = json.email;
                 sessionStorage.NOME_USUARIO = json.nome;
                 sessionStorage.ID_USUARIO = json.id;
-                
-                Swal.fire({
-                    icon: "success",
-                    title: "Sucesso!",
-                    background: "#1D1D1D",
-                    color: "#FFF",
-                    text: "LOGIN REALIZADO COM SUCESSO",
-                    showConfirmButton: false,
-                  });
+
                 setTimeout(function () {
                     window.location = "/quiz.html";
                 }, 1500); // apenas para exibir o loading
@@ -101,7 +85,7 @@ function entrar() {
 
             resposta.text().then(texto => {
                 console.error(texto);
-                finalizarAguardar(texto);
+                // finalizarAguardar(texto);
             });
         }
 
