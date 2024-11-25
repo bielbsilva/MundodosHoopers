@@ -13,6 +13,7 @@ let totalCorretas = 0
 comecarQuiz.addEventListener("click", comecarJogo)
 proximaPergunta.addEventListener("click", displayProximaPergunta)
 
+
 function comecarJogo() {
   comecarQuiz.classList.add("hide")
   retanguloPergunta.classList.remove("hide")

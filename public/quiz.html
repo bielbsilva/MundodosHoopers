@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/stylequiz.css">
 </head>
 
-<body>
+<body onload="onloadEsconder()">
 
     <header>
 
@@ -40,21 +40,23 @@
                 Boa sorte!!!
             </h3>
 
-            <div class="container">
-                <div class="questao-container hide">
-                    <span class="questao">Pergunta aqui?</span>
-                    <div class="resposta-container">
-                        <button class="resposta button">Resposta 1</button>
-                        <button class="resposta button">Resposta 2</button>
-                        <button class="resposta button">Resposta 3</button>
-                        <button class="resposta button">Resposta 4</button>
+                <div class="container">
+                    <div class="questao-container hide">
+                        <span class="questao">Pergunta aqui?</span>
+                        <div class="resposta-container">
+                            <button class="resposta button">Resposta 1</button>
+                            <button class="resposta button">Resposta 2</button>
+                            <button class="resposta button">Resposta 3</button>
+                            <button class="resposta button">Resposta 4</button>
+                        </div>
+                    </div>
+                    <div class="controles-container">
+                        <button class="comecar-quiz button">Começar Quiz!</button>
+                        <button class="proxima-pergunta button hide">Próxima pergunta</button>
                     </div>
                 </div>
-                <div class="controles-container">
-                    <button class="comecar-quiz button">Começar Quiz!</button>
-                    <button class="proxima-pergunta button hide">Próxima pergunta</button>
-                </div>
-            </div>
-</body>
+            </body>
 
 </html>
+
+<script src="js/quiz.js"></script>
