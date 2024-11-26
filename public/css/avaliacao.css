@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(90deg, #04112e 0%, #1D428A 100%);
+}
+
+.navbar .container_navbar{
+    width: 70%;
+    height: 100%;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    align-self: center;
+    
+}
+
+.navbar .logo .fundo_logo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 70%;
+    height: 100%;
+}
+
+.navbar .logo .fundo_logo p{
+    font-family:  "Poppins", sans-serif;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    font-family:  "Poppins", sans-serif;
+    color: #F8E300;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu a{
+    color: #fff;
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+}
+
+.navbar .menu .menu_item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-family:  "Poppins", sans-serif;
+    color: #F8E300;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.avaliacao .container_card{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 64%;
+    backdrop-filter: blur(20px);
+    box-shadow: 3px 3px #1D428A;
+}
+
+.avaliacao .container_card .feedback{
+    height: 100px;
+    width: 70%;
+    border: 4px solid #1D428A;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family:  "Poppins", sans-serif;
+    font-size: 30px;
+    color: #1D428A;
+    padding: 5px;
+}
+
+
+.avaliacao .container_card .avaliacao_estrelas{
+    display: flex;
+    width: 80%;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avaliacao .container_card .avaliacao_estrelas img{
+    width: 100px;
+    height: 100px;
+}
+
+.avaliacao .container_card .avaliacao_estrelas img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.avaliacao .container_card button{
+    background-color: #1D428A;
+    width: 130px;
+    height: 30px;
+    border: 1px solid #1D428A;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.avaliacao .container_card button:hover{
+    background-color: transparent;
+    color: #fff;
+    background-color: #224ea7;
+}

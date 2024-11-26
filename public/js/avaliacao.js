@@ -22,9 +22,9 @@ function estrela1() {
     for (var contadorEstrela = 1; contadorEstrela <= 5; contadorEstrela++) {
         var idEstrela = document.getElementById(`star${contadorEstrela}`);
         if (contadorEstrela <= avaliacao) {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaAmarela.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaAmarela.png" alt="">`;
         } else {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaApagada.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaApagada.png" alt="">`;
         }
     }
 }
@@ -33,9 +33,9 @@ function estrela2() {
     for (var contadorEstrela = 1; contadorEstrela <= 5; contadorEstrela++) {
         var idEstrela = document.getElementById(`star${contadorEstrela}`);
         if (contadorEstrela <= avaliacao) {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaAmarela.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaAmarela.png" alt="">`;
         } else {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaApagada.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaApagada.png" alt="">`;
         }
     }
 }
@@ -44,9 +44,9 @@ function estrela3() {
     for (var contadorEstrela = 1; contadorEstrela <= 5; contadorEstrela++) {
         var idEstrela = document.getElementById(`star${contadorEstrela}`);
         if (contadorEstrela <= avaliacao) {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaAmarela.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaAmarela.png" alt="">`;
         } else {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaApagada.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaApagada.png" alt="">`;
         }
     }
 }
@@ -55,9 +55,9 @@ function estrela4() {
     for (var contadorEstrela = 1; contadorEstrela <= 5; contadorEstrela++) {
         var idEstrela = document.getElementById(`star${contadorEstrela}`);
         if (contadorEstrela <= avaliacao) {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaAmarela.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaAmarela.png" alt="">`;
         } else {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaApagada.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaApagada.png" alt="">`;
         }
     }
 }
@@ -66,9 +66,9 @@ function estrela5() {
     for (var contadorEstrela = 1; contadorEstrela <= 5; contadorEstrela++) {
         var idEstrela = document.getElementById(`star${contadorEstrela}`);
         if (contadorEstrela <= avaliacao) {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaAmarela.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaAmarela.png" alt="">`;
         } else {
-            idEstrela.innerHTML = `<img class="star" src="assets/EstrelaApagada.png" alt="">`;
+            idEstrela.innerHTML = `<img class="star" src="img/EstrelaApagada.png" alt="">`;
         }
     }
 }

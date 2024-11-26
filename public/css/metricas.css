@@ -44,7 +44,7 @@ body{
 }
 
 .navbar .logo .fundo_logo p{
-    font-family: titleFont;
+    font-family: "Poppins", sans-serif;
     margin-bottom: 15px;
     font-size: 20px;
     color: #fff;
@@ -126,22 +126,8 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 7rem;
     gap: 15px;
-}
-
-.grafico_top_right .idade_kpi{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-}
-
-#jogador_preferido, #idade{
-    font-size: 15px;
-    font-family: titleFont;
 }
 
 .grafico{
